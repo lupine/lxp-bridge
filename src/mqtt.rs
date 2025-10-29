@@ -174,7 +174,6 @@ impl Message {
             ["read", "inputs", "1"] => ReadInputs(inverter, 1),
             ["read", "inputs", "2"] => ReadInputs(inverter, 2),
             ["read", "inputs", "3"] => ReadInputs(inverter, 3),
-            ["read", "inputs", "4"] => ReadInputs(inverter, 4),
             ["read", "input", register] => {
                 ReadInput(inverter, register.parse()?, self.payload_int_or_1()?)
             }
